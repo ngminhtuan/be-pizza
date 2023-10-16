@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .arrow-hover {
+    @apply after:content-[''] after:absolute after:top-[15%] after:bg-[url('/img/arrow.svg')] after:bg-no-repeat after:bg-contain after:bg-center after:right-[-3.29429vw] after:w-[2.19619vw] after:h-[2.56223vw]
+  }
+
+  .list-country-banner {
+    @apply relative text-white opacity-50 hover:opacity-100 my-4 hover:arrow-hover
+  }
+
+  .score-received {
+    @apply text-[2.56223vw] pt-[0.21962vw] px-[0.21962vw] bg-black group-hover:bg-[#7daeeb]
+  }
+
+  .button-view {
+    @apply w-[10.2489vw] h-[7.32064vw] text-[1.46413vw] text-center leading-none inline-flex justify-center items-center rounded-[50%] border bg-[length:400%] bg-[0] 
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  word-break: break-word;
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 2px;
+  }
+ 
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #27272E;
+  }
+ 
+  .scrollbar::-webkit-scrollbar-track {
+    background: rgba(36,46,82,.2)
+  }
+ }
+ 
