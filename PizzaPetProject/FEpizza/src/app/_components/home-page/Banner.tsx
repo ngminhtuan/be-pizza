@@ -2,11 +2,11 @@
 
 const Banner = () => {
     return (
-        <section className="h-screen w-full relative z-[1]">
+        <section className="h-screen w-full relative z-[1] after:h-full after:absolute after:top-0 after:left-0 after:w-full after:bg-[rgb(0,0,0)]/20">
             <div className="h-full w-full absolute overflow-hidden top-0 left-0 -z-[1]">
                 <video className="object-cover min-h-full min-w-full h-auto w-auto absolute block top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="./video/intro-piz-banner.mp4" loop={true} muted={true} autoPlay={true} playsInline={true}></video>
             </div>
-            <ul className="absolute bottom-[1.90337vw] left-[2.92826vw] font-normal leading-none">
+            <ul className="absolute pt-[120px] pb-5 lg:py-0 lg:bottom-[1.90337vw] left-[2.92826vw] font-normal leading-none z-[2]">
                 <li className="list-country-banner"><a href="" className="text-[4.08521vw] tracking-tight">Vietnam</a></li>
                 <li className="list-country-banner"><a href="" className="text-[4.08521vw] tracking-tight">Cambodia</a></li>
                 <li className="list-country-banner"><a href="" className="text-[4.08521vw] tracking-tight">India <span className="text-[1.46413vw]">coming soon</span></a></li>

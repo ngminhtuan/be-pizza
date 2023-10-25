@@ -16,7 +16,7 @@
   }
 
   .button-view {
-    @apply w-[10.2489vw] h-[7.32064vw] text-[1.46413vw] text-center leading-none inline-flex justify-center items-center rounded-[50%] border bg-[length:400%] bg-[0] 
+    @apply w-[120px] h-[88px] text-lg lg:w-[10.2489vw] lg:h-[7.32064vw] lg:text-[1.46413vw] text-center leading-none inline-flex justify-center items-center rounded-[50%] border bg-[length:400%] bg-[0] 
   }
 }
 

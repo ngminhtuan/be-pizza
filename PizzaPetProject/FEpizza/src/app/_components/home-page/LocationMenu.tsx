@@ -8,8 +8,8 @@ const LocationMenu = () => {
     const [isActiveShopList, setIsActiveShopList] = useState<boolean>(false)
 
     return (
-        <section className="flex">
-            <div className="bg-[#242E52] w-1/2 pt-[56px] pb-[64px] px-[5.85652vw]">
+        <section className="lg:flex">
+            <div className="bg-[#242E52] lg:w-1/2 pt-[56px] pb-[64px] px-[5.85652vw]">
                 <h2 className="text-[4.39239vw] text-white text-center mb-16">Location</h2>
                 <ul className="flex">
                     <li className="relative text-white pt-4 opacity-50 hover:opacity-100"><a href="" className="text-[1.75695vw] after:content-[''] after:absolute after:top-0 after:left-1/2 after:-translate-x-1/2 after:w-2 after:h-2 after:rounded-full after:bg-white">Vietnam</a></li>
@@ -39,8 +39,8 @@ const LocationMenu = () => {
 
                 </div>
             </div>
-            <div className="bg-[#EAE6DC] w-1/2 pt-[56px] pb-[64px] px-[5.85652vw]">
-                <h2 className="text-[4.39239vw] text-white text-center mb-16">Menu</h2>
+            <div className="bg-[#EAE6DC] lg:w-1/2 pt-[56px] pb-[64px] px-[5.85652vw]">
+                <h2 className="text-[4.39239vw] text-black text-center mb-16">Menu</h2>
                 <div className="relative w-full h-0 pb-[100%]">
                     <div className="overflow-hidden h-0 pb-[100%] z-[1] after:content-[''] after:h-full after:absolute after:top-0 after:left-0 after:w-full after:bg-[rgb(0,0,0)]/20">
                         <video className="min-h-full min-w-full h-auto w-auto absolute block top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="./video/menu_pizza4ps-1.mp4" loop={true} muted={true} autoPlay={true} playsInline={true}></video>
