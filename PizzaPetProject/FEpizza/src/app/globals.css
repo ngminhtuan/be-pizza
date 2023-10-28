@@ -16,7 +16,15 @@
   }
 
   .button-view {
-    @apply w-[120px] h-[88px] text-lg lg:w-[10.2489vw] lg:h-[7.32064vw] lg:text-[1.46413vw] text-center leading-none inline-flex justify-center items-center rounded-[50%] border bg-[length:400%] bg-[0] 
+    @apply w-[120px] h-[88px] text-lg lg:w-[10.2489vw] lg:h-[7.32064vw] lg:text-[1.46413vw] text-center leading-none inline-flex justify-center items-center rounded-[50%] border bg-[length:400%] bg-[0]
+  }
+
+  .header-transparent {
+    @apply text-white bg-transparent
+  }
+
+  .header-white {
+    @apply text-black bg-[#F4F2EF]
   }
 }
 
@@ -36,26 +44,36 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
   word-break: break-word;
 }
 
 @layer utilities {
   .scrollbar::-webkit-scrollbar {
-    width: 2px;
+    width: 0px;
   }
- 
+
   .scrollbar::-webkit-scrollbar-thumb {
     background: #27272E;
   }
- 
+
   .scrollbar::-webkit-scrollbar-track {
-    background: rgba(36,46,82,.2)
+    background: rgba(36, 46, 82, .2)
   }
- }
- 
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+}

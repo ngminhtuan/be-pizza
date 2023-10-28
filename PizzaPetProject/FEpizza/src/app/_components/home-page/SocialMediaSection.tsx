@@ -38,7 +38,7 @@ const SocialMediaSection = () => {
 
     const ytImgList = initialYtImgList.map((item, key) => {
         return (
-            <a href="" key={key} className="relative group">
+            <a href="" key={key} className="relative w-[85vw] lg:w-auto group">
                 <Image className="absolute w-[2.34261vw] h-[1.83016vw] z-[1] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:-rotate-12" alt="" src="./img/svgexport-15.svg" width="0" height="0" />
                 <div className="after:content-[''] after:h-full after:absolute after:top-0 after:left-0 after:w-full after:bg-[rgb(0,0,0)]/30">
                     <Image src={item} width='0' height='0' sizes="100vw" alt="" className="w-full lg:h-[15.08053vw] object-cover " />
@@ -67,20 +67,22 @@ const SocialMediaSection = () => {
                         </a>
                         <Image className="w-5 h-5 -rotate-[135deg]" alt="" src="./img/svgexport-14.svg" width="0" height="0" />
                     </div>
-                    <div className="overflow-x-auto">
+                    <div className="overflow-x-auto no-scrollbar">
                         <div className="lg:overflow-hidden inline-flex lg:flex lg:flex-wrap gap-[0.73206vw]">
                             {igImgList}
                         </div>
                     </div>
                 </div>
-                <div className="w-[26.79356vw]">
+                <div className="">
                     <div className="flex items-center">
                         <a href="" className="inline-block font-bold text-[#242E52] tracking-tight leading-[1] text-[1.75695vw] mb-[28px] mr-2"><i className="text-[2.34261vw] pr-2 font-normal not-italic">Subscribe</i> Youtube
                         </a>
                         <Image className="w-5 h-5 -rotate-[135deg]" alt="" src="./img/svgexport-14.svg" width="0" height="0" />
                     </div>
-                    <div className="lg:flex lg:flex-col gap-[0.73206vw]">
-                        {ytImgList}
+                    <div className="overflow-x-auto no-scrollbar">
+                        <div className="inline-flex lg:flex lg:flex-col gap-[0.73206vw]">
+                            {ytImgList}
+                        </div>
                     </div>
                 </div>
                 <div className="mt-[88px]">
